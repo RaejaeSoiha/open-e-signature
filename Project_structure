@@ -1,0 +1,75 @@
+open-e-signature/
+├── backend/                 # Backend API and server logic
+│   ├── config/              # Configuration files (e.g., database, environment variables)
+│   │   ├── db.js            # Database connection setup
+│   │   └── dotenv.config.js # Environment variable configuration
+│   ├── controllers/         # Request handling logic
+│   │   ├── authController.js # User authentication logic
+│   │   ├── documentController.js # Document upload and management
+│   │   └── signatureController.js # Signature creation and embedding
+│   ├── middleware/          # Middleware functions (e.g., authentication, error handling)
+│   │   ├── authMiddleware.js # Authentication verification
+│   │   └── errorHandler.js   # Global error handling middleware
+│   ├── models/              # Database models (e.g., user, document)
+│   │   ├── User.js          # User schema/model
+│   │   └── Document.js      # Document schema/model
+│   ├── routes/              # API endpoints
+│   │   ├── authRoutes.js    # Authentication routes
+│   │   ├── documentRoutes.js # Document upload and retrieval routes
+│   │   └── signatureRoutes.js # Signature-related routes
+│   ├── utils/               # Utility functions and helpers
+│   │   ├── jwtHelper.js     # JSON Web Token helpers
+│   │   └── fileHelper.js    # File management helpers
+│   ├── index.js             # Main entry point for the backend server
+│   ├── package.json         # Backend dependencies and scripts
+│   └── README.md            # Backend documentation
+│
+├── frontend/                # Frontend application
+│   ├── public/              # Static files
+│   │   └── index.html       # Main HTML file
+│   ├── src/                 # React application source
+│   │   ├── assets/          # Images, fonts, and other assets
+│   │   ├── components/      # Reusable React components
+│   │   │   ├── Navbar.js    # Navigation bar component
+│   │   │   ├── Footer.js    # Footer component
+│   │   │   ├── SignaturePad.js # Signature drawing component
+│   │   │   └── Modal.js     # Modal component for signature overlay
+│   │   ├── pages/           # Full pages for the application
+│   │   │   ├── LoginPage.js # Login and registration page
+│   │   │   ├── Dashboard.js # Main dashboard for users
+│   │   │   └── SignDocument.js # Document signing page
+│   │   ├── services/        # API service calls
+│   │   │   ├── authService.js # Authentication-related API calls
+│   │   │   ├── documentService.js # Document-related API calls
+│   │   │   └── signatureService.js # Signature-related API calls
+│   │   ├── App.js           # Main React application entry point
+│   │   ├── index.js         # React DOM rendering
+│   │   └── styles/          # CSS or SCSS files
+│   │       ├── app.css      # Global styles
+│   │       ├── navbar.css   # Styles for the navigation bar
+│   │       └── modal.css    # Styles for modal component
+│   ├── package.json         # Frontend dependencies and scripts
+│   └── README.md            # Frontend documentation
+│
+├── docs/                    # Project documentation
+│   ├── CONTRIBUTING.md      # Guidelines for contributing to the project
+│   ├── LICENSE              # Open-source license (e.g., MIT)
+│   ├── INSTALLATION.md      # Installation and setup guide
+│   ├── API_DOCS.md          # API documentation for backend endpoints
+│   └── README.md            # General project description
+│
+├── docker/                  # Docker configuration files
+│   ├── Dockerfile.backend   # Dockerfile for backend
+│   ├── Dockerfile.frontend  # Dockerfile for frontend
+│   └── docker-compose.yml   # Docker Compose configuration
+│
+├── tests/                   # Test cases for backend and frontend
+│   ├── backend/             # Backend test cases
+│   │   ├── auth.test.js     # Tests for authentication
+│   │   └── document.test.js # Tests for document management
+│   ├── frontend/            # Frontend test cases
+│   │   ├── App.test.js      # Tests for React components
+│   │   └── SignaturePad.test.js # Tests for signature component
+│   └── README.md            # How to run tests
+│
+└── README.md                # General project overview
